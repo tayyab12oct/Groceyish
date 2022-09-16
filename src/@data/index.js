@@ -1,5 +1,106 @@
 import { assets } from "constant/images";
 
+export const category = [
+    {
+        className: "bg-orange-50",
+        src: assets.category.img1,
+        title: "Peach",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-pink-50",
+        src: assets.category.img2,
+        title: "Vegetables",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-green-50",
+        src: assets.category.img3,
+        title: "strawberry",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-orange-50",
+        src: assets.category.img4,
+        title: "Apple",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-green-100",
+        src: assets.category.img5,
+        title: "Orange",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-yellow-50",
+        src: assets.category.img6,
+        title: "Potato",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-primary-50",
+        src: assets.category.img7,
+        title: "Carrot",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-orange-50",
+        src: assets.category.img1,
+        title: "Peach",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-pink-50",
+        src: assets.category.img2,
+        title: "Vegetables",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-green-50",
+        src: assets.category.img3,
+        title: "strawberry",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-orange-50",
+        src: assets.category.img4,
+        title: "Apple",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-green-100",
+        src: assets.category.img5,
+        title: "Orange",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-yellow-50",
+        src: assets.category.img6,
+        title: "Potato",
+        items: "50",
+        imgClass: ""
+    },
+    {
+        className: "bg-primary-50",
+        src: assets.category.img7,
+        title: "Carrot",
+        items: "50",
+        imgClass: ""
+    }
+]
+
 export const promotion = [
     {
         mainClass: "bg-secondary-200",
@@ -38,8 +139,92 @@ export const services = [
         src: assets.service.delivery,
         title: "Free delivery",
         desc: "Do purchase over $50 and get free delivery anywhere",
-        imgClass: "2xl:w-16 w-10"
+        imgClass: "2xl:w-18 w-10"
     },
+]
+export const links = [
+    {
+        title: "Account",
+        list: [
+            {
+                text: "Wishlist"
+            },
+            {
+                text: "Cart"
+            },
+            {
+                text: "Track Order"
+            },
+            {
+                text: "Shipping Details"
+            },
+        ]
+    },
+    {
+        title: "Useful links",
+        list: [
+            {
+                text: "About Us"
+            },
+            {
+                text: "Contact"
+            },
+            {
+                text: "Hot deals"
+            },
+            {
+                text: "Promotions"
+            },
+            {
+                text: "New products"
+            },
+        ]
+    },
+    {
+        title: "Help Center",
+        list: [
+            {
+                text: "Payments"
+            },
+            {
+                text: "Refund"
+            },
+            {
+                text: "Checkout"
+            },
+            {
+                text: "Shipping"
+            },
+            {
+                text: "Q&A"
+            },
+            {
+                text: "Privacy Policy"
+            },
+        ]
+    },
+]
+export const address = [
+    {
+        src: assets.icon.location,
+        title: "Address",
+        text: "1762 School House Road"
+    },
+    {
+        src: assets.icon.phone,
+        title: "Call Us",
+        text: "1233-777"
+    },
+    {
+        src: assets.icon.mail,
+        title: "Email",
+        text: "groceyish@contact.com"
+    },
+    {
+        src: assets.icon.clock,
+        title: "Work hours",
+        text: "8:00 - 20:00, Sunday -  Thursday"
+    }
 ]
 
 export const navigation = [
@@ -47,12 +232,19 @@ export const navigation = [
         name: 'Facebook',
         href: '#',
         icon: (props) => (
-            <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-                <path
-                    fillRule="evenodd"
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clipRule="evenodd"
-                />
+            <svg viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+                <path d="M3.69604 11.2481C3.62404 11.2481 2.04004 11.2481 1.32004 11.2481C0.93604 11.2481 0.81604 11.1041 0.81604 10.7441C0.81604 9.78407 0.81604 8.80007 0.81604 7.84007C0.81604 7.45607 0.96004 7.33607 1.32004 7.33607H3.69604C3.69604 7.26407 3.69604 5.87207 3.69604 5.22407C3.69604 4.26407 3.86404 3.35207 4.34404 2.51207C4.84804 1.64807 5.56804 1.07207 6.48004 0.736072C7.08004 0.520072 7.68004 0.424072 8.32804 0.424072H10.68C11.016 0.424072 11.16 0.568072 11.16 0.904072V3.64007C11.16 3.97607 11.016 4.12007 10.68 4.12007C10.032 4.12007 9.38404 4.12007 8.73604 4.14407C8.08804 4.14407 7.75204 4.45607 7.75204 5.12807C7.72804 5.84807 7.75204 6.54407 7.75204 7.28807H10.536C10.92 7.28807 11.064 7.43207 11.064 7.81607V10.7201C11.064 11.1041 10.944 11.2241 10.536 11.2241C9.67204 11.2241 7.82404 11.2241 7.75204 11.2241V19.0481C7.75204 19.4561 7.63204 19.6001 7.20004 19.6001C6.19204 19.6001 5.20804 19.6001 4.20004 19.6001C3.84004 19.6001 3.69604 19.4561 3.69604 19.0961C3.69604 16.5761 3.69604 11.3201 3.69604 11.2481V11.2481Z" fill="white" />
+            </svg>
+        ),
+    },
+    {
+        name: 'LinkedIn',
+        href: '#',
+        icon: (props) => (
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+                <path d="M19.9334 19.5999V12.5679C19.9334 9.11192 19.1894 6.47192 15.1574 6.47192C13.2134 6.47192 11.9174 7.52792 11.3894 8.53592H11.3414V6.78392H7.52539V19.5999H11.5094V13.2399C11.5094 11.5599 11.8214 9.95192 13.8854 9.95192C15.9254 9.95192 15.9494 11.8479 15.9494 13.3359V19.5759H19.9334V19.5999Z" fill="white" />
+                <path d="M1.04541 6.78394H5.02941V19.5999H1.04541V6.78394Z" fill="white" />
+                <path d="M3.0374 0.399902C1.7654 0.399902 0.733398 1.4319 0.733398 2.7039C0.733398 3.9759 1.7654 5.0319 3.0374 5.0319C4.3094 5.0319 5.3414 3.9759 5.3414 2.7039C5.3414 1.4319 4.3094 0.399902 3.0374 0.399902Z" fill="white" />
             </svg>
         ),
     },

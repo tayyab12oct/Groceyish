@@ -17,8 +17,8 @@ function CustomTabs(props) {
         slidesToShow: 5,
         swipeToSlide: true,
         initialSlide: 0,
-        nextArrow: <NextArrowButton class="absolute -top-9 md:-top-11 md:-mr-0 lg:-top-20 lg:right-0 md:right-9 right-4 xl:right-12" />,
-        prevArrow: <PrevArrowButton class="absolute -top-9 md:-top-11 lg:-top-20 left-0 ml-[80%] sm:ml-[89%] md:ml-[85%] xl:ml-[90%] 2xl:ml-[92%]" />,
+        nextArrow: <NextArrowButton class="absolute -top-9 md:-top-9 md:-mr-0 lg:-top-20 lg:right-0 md:right-5 right-6 xl:right-12" />,
+        prevArrow: <PrevArrowButton class="absolute -top-9 md:-top-9 lg:-top-20 left-0 ml-[80%] sm:ml-[87%] md:ml-[89%] xl:ml-[90%] 2xl:ml-[92%]" />,
         responsive: [
             {
                 breakpoint: 1024,
@@ -63,11 +63,11 @@ function CustomTabs(props) {
             {dailySells?.map((i, j) => {
                 return (
                     <TabPanel key={j} className="">
-                        <Slider {...settings} className="md:-mx-2">
+                        <Slider {...settings} className="-mx-2">
                             {i?.products?.map((val, k) => {
                                 return <>
                                     {val.offer ? <Membership /> :
-                                        <Product {...val} key={k} className="hover:shadow-lg mx-0 mb-5 sm:mx-2 p-1.5 rounded overflow-hidden" btnValue="Add to cart" ratingClass="pt-2.5"
+                                        <Product {...val} key={k} className="hover:shadow-lg mb-5 p-1.5 rounded overflow-hidden" btnValue="Add to cart" ratingClass="pt-2.5"
                                             btnClass="w-full bg-primary-100 text-white 2xl:py-3 py-2.5 2xl:text-md text-sm"
                                             icon={assets.icon.cartWhite}
                                         >

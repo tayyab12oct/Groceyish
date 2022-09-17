@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="">
       <Slider />
-      <div className="2xl:max-w-8xl xl:max-w-6xl max-w-4xl mx-auto md:py-20 py-10 md:px-22 sm:px-14 px-4 xl:px-0 w-full">
+      <div className="2xl:max-w-8xl xl:max-w-6xl lg:max-w-6xl max-w-4xl mx-auto md:py-20 py-10 md:px-22 sm:px-8 px-4 xl:px-5 2xl:px-0 w-full">
         <CategoryTabs title="Explore Categories"
           labelClass="text-black-200 lg:text-2.5xl text-2xl font-semibold tracking-wide"
         />
       </div>
-      <div className="2xl:max-w-8xl xl:max-w-6xl max-w-4xl mx-auto py-5 md:px-22 sm:px-14 px-4 xl:px-0 w-full">
+      <div className="2xl:max-w-8xl xl:max-w-6xl lg:max-w-6xl max-w-4xl mx-auto py-5 md:px-22 sm:px-8 px-4 xl:px-5 2xl:px-0 w-full">
         <ProductTabs title="Featured Products"
           labelClass="text-black-200 lg:text-2.5xl text-2xl font-semibold tracking-wide"
         />
@@ -22,7 +22,7 @@ function App() {
           return <PromotionCard {...v} key={k} />
         })}
       </div>
-      <div className="2xl:max-w-8xl xl:max-w-6xl mx-auto py-5 lg:px-22 md:px-6 sm:px-6 px-4 xl:px-0 w-full">
+      <div className="2xl:max-w-8xl xl:max-w-6xl mx-auto py-5 md:px-6 sm:px-6 px-4 xl:px-0 w-full">
         <DailySellsTabs title="Daily Best Sells" />
       </div>
       <div className="2xl:max-w-8xl xl:max-w-6xl max-w-6xl mx-auto md:py-20 pb-20 md:px-6 px-5 xl:px-0 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-20 md:gap-10 gap-4 w-full">

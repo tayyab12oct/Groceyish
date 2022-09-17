@@ -47,7 +47,7 @@ function CustomTabs(props) {
     };
     return (
         <Tabs>
-            <TabList className="md:flex items-center justify-between lg:pb-8 pb-5">
+            <TabList className="sm:flex items-center justify-between lg:pb-8 pb-5">
                 <h1 className={props.labelClass}>{props.title}</h1>
                 <div>
                     {tabs.map((v, k) => {

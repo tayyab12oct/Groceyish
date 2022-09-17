@@ -1,7 +1,7 @@
+import React from 'react'
 import { Button } from 'components/atoms'
 import { Membership } from 'components/organisms'
 import { assets } from 'constant/images'
-import React from 'react'
 import { twMerge } from 'tailwind-merge'
 
 function Product(props) {

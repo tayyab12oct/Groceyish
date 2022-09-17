@@ -3,8 +3,8 @@ import { tabs } from '@data';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Slider from "react-slick";
-import { Product } from 'components/molecules';
 import { NextArrowButton, PrevArrowButton } from "components/molecules"
+import { Product } from 'components/organisms';
 
 function CustomTabs(props) {
     const settings = {

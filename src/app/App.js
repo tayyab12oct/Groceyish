@@ -1,6 +1,6 @@
-import { Product, Services } from "components/molecules";
+import { Services } from "components/molecules";
 import { assets } from "constant/images"
-import { CategoryTabs, Footer, PromotionCard, Slider, ProductTabs, DailySellsTabs } from "components/organisms";
+import { CategoryTabs, Footer, PromotionCard, Slider, ProductTabs, Product, DailySellsTabs } from "components/organisms";
 import { promotion, services, topList } from "@data"
 
 function App() {

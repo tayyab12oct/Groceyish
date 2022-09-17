@@ -31,3 +31,13 @@ body{
     background: #3BB77E;
     border-color: #3BB77E;
 }
+.react-tabs__tab{
+    padding: 6px 6px !important;
+    color: #253D4E;
+}
+.react-tabs__tab--selected {
+    border: none !important;
+    color: #3BB77E !important;
+    border-radius: 0 !important;
+    font-weight: 700 !important;
+}

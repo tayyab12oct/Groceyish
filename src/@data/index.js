@@ -1,104 +1,360 @@
 import { assets } from "constant/images";
 
-export const category = [
+export const tabs = [
     {
-        className: "bg-orange-50",
-        src: assets.category.img1,
-        title: "Peach",
-        items: "50",
-        imgClass: ""
+        value: "All",
+        category: [
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-pink-50",
+                src: assets.category.img2,
+                title: "Vegetables",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-yellow-50",
+                src: assets.category.img6,
+                title: "Potato",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-primary-50",
+                src: assets.category.img7,
+                title: "Carrot",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-pink-50",
+                src: assets.category.img2,
+                title: "Vegetables",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-yellow-50",
+                src: assets.category.img6,
+                title: "Potato",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-primary-50",
+                src: assets.category.img7,
+                title: "Carrot",
+                items: "50",
+                imgClass: ""
+            }
+        ]
     },
     {
-        className: "bg-pink-50",
-        src: assets.category.img2,
-        title: "Vegetables",
-        items: "50",
-        imgClass: ""
+        value: "Vegetables",
+        category: [
+            {
+                className: "bg-pink-50",
+                src: assets.category.img2,
+                title: "Vegetables",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-yellow-50",
+                src: assets.category.img6,
+                title: "Potato",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-primary-50",
+                src: assets.category.img7,
+                title: "Carrot",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-pink-50",
+                src: assets.category.img2,
+                title: "Vegetables",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-yellow-50",
+                src: assets.category.img6,
+                title: "Potato",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-primary-50",
+                src: assets.category.img7,
+                title: "Carrot",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-pink-50",
+                src: assets.category.img2,
+                title: "Vegetables",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-yellow-50",
+                src: assets.category.img6,
+                title: "Potato",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-primary-50",
+                src: assets.category.img7,
+                title: "Carrot",
+                items: "50",
+                imgClass: ""
+            },
+        ]
     },
     {
-        className: "bg-green-50",
-        src: assets.category.img3,
-        title: "strawberry",
-        items: "50",
-        imgClass: ""
+        value: "Fruits",
+        category: [
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            }
+        ]
     },
     {
-        className: "bg-orange-50",
-        src: assets.category.img4,
-        title: "Apple",
-        items: "50",
-        imgClass: ""
+        value: "Coffee & teas",
+        category: [
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            }
+        ]
     },
     {
-        className: "bg-green-100",
-        src: assets.category.img5,
-        title: "Orange",
-        items: "50",
-        imgClass: ""
+        value: "Meat",
+        category: [
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img1,
+                title: "Peach",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-50",
+                src: assets.category.img3,
+                title: "strawberry",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-orange-50",
+                src: assets.category.img4,
+                title: "Apple",
+                items: "50",
+                imgClass: ""
+            },
+            {
+                className: "bg-green-100",
+                src: assets.category.img5,
+                title: "Orange",
+                items: "50",
+                imgClass: ""
+            }
+        ]
     },
-    {
-        className: "bg-yellow-50",
-        src: assets.category.img6,
-        title: "Potato",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-primary-50",
-        src: assets.category.img7,
-        title: "Carrot",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-orange-50",
-        src: assets.category.img1,
-        title: "Peach",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-pink-50",
-        src: assets.category.img2,
-        title: "Vegetables",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-green-50",
-        src: assets.category.img3,
-        title: "strawberry",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-orange-50",
-        src: assets.category.img4,
-        title: "Apple",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-green-100",
-        src: assets.category.img5,
-        title: "Orange",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-yellow-50",
-        src: assets.category.img6,
-        title: "Potato",
-        items: "50",
-        imgClass: ""
-    },
-    {
-        className: "bg-primary-50",
-        src: assets.category.img7,
-        title: "Carrot",
-        items: "50",
-        imgClass: ""
-    }
 ]
 
 export const promotion = [

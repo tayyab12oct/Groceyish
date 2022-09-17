@@ -11,7 +11,7 @@ function Footer() {
                     <div className="2xl:space-y-6 space-y-5 py-4 2xl:mt-4 mt-2">
                         {address.map((v, k) => {
                             return (
-                                <div className='flex items-center space-x-1'>
+                                <div key={k} className='flex items-center space-x-1'>
                                     <div><img src={v.src} alt="icons" className='2xl:w-4.5 w-4' /></div>
                                     <p className="text-black-200 text-xs 2xl:text-base"><span className="font-semibold pr-0.5">{v.title}:</span>{v.text}</p>
                                 </div>

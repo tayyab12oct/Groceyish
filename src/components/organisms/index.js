@@ -1,5 +1,6 @@
 export { default as Slider } from "./slider"
 export { default as PromotionCard } from "./promotion-card"
-export { default as Tabs } from "./tabs"
+export { default as ProductTabs } from "./product-tabs"
 export { default as CategoryTabs } from "./category-tabs"
+export { default as DailySellsTabs } from "./daily-sells-tabs"
 export { default as Footer } from "./footer"

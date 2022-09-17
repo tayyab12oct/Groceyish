@@ -1,25 +1,47 @@
-import { Services } from "components/molecules";
-import { CategoryTabs, Footer, PromotionCard, Slider, Tabs } from "components/organisms";
+import { Product, Services } from "components/molecules";
 import { assets } from "constant/images"
-import { promotion, services } from "@data"
+import { CategoryTabs, Footer, PromotionCard, Slider, ProductTabs, DailySellsTabs } from "components/organisms";
+import { promotion, services, topList } from "@data"
 
 function App() {
   return (
     <div className="">
       <Slider />
-      <div className="2xl:max-w-8xl xl:max-w-7xl lg:max-w-7xl max-w-4xl mx-auto py-20 md:px-22 px-5 xl:px-0 w-full">
+      <div className="2xl:max-w-8xl xl:max-w-6xl max-w-4xl mx-auto md:py-20 py-10 md:px-22 sm:px-14 px-4 xl:px-0 w-full">
         <CategoryTabs title="Explore Categories"
           labelClass="text-black-200 lg:text-2.5xl text-2xl font-semibold tracking-wide"
         />
       </div>
-      <div className="2xl:max-w-8xl xl:max-w-6xl max-w-4xl mx-auto py-20 md:px-22 px-14 xl:px-0 w-full">
-        <Tabs title="Featured Products"
-          labelClass="text-black-200 text-2.5xl font-semibold tracking-wide"
+      <div className="2xl:max-w-8xl xl:max-w-6xl max-w-4xl mx-auto py-5 md:px-22 sm:px-14 px-4 xl:px-0 w-full">
+        <ProductTabs title="Featured Products"
+          labelClass="text-black-200 lg:text-2.5xl text-2xl font-semibold tracking-wide"
         />
       </div>
       <div className="2xl:max-w-8xl xl:max-w-6xl max-w-6xl mx-auto py-20 md:px-6 px-5 xl:px-0 grid md:grid-cols-2 grid-cols-1 gap-5 w-full">
         {promotion.map((v, k) => {
           return <PromotionCard {...v} key={k} />
+        })}
+      </div>
+      <div className="2xl:max-w-8xl xl:max-w-6xl mx-auto py-5 lg:px-22 md:px-6 sm:px-6 px-4 xl:px-0 w-full">
+        <DailySellsTabs title="Daily Best Sells"
+        />
+      </div>
+      <div className="2xl:max-w-8xl xl:max-w-6xl max-w-6xl mx-auto md:py-20 pb-20 md:px-6 px-5 xl:px-0 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-20 md:gap-10 gap-4 w-full">
+        {topList.map((v, k) => {
+          return (
+            <div key={k}>
+              <h1 className="text-black-200 lg:text-2xl text-xl font-semibold tracking-wide border-b border-black-100 pb-4 relative">{v.title}
+                <span className="bg-primary-100 h-0.5 w-26 absolute -bottom-[1.15px] left-0 rounded-xl" />
+              </h1>
+              <div className="space-y-4 py-6">
+                {v?.list?.map((val, i) => {
+                  return <Product className="mx-0 flex-row border-0 space-x-1" {...val} key={i}
+                    imgMainClass="bg-gray-400 p-3"
+                    imgClass="w-20"
+                    btnClass="hidden" nameClass="hidden" ratingClass="pt-0" />
+                })}</div>
+            </div>
+          )
         })}
       </div>
       <PromotionCard src={assets.mobile}

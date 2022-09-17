@@ -102,6 +102,62 @@ export const tabs = [
                 items: "50",
                 imgClass: ""
             }
+        ],
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
         ]
     },
     {
@@ -170,6 +226,62 @@ export const tabs = [
                 items: "50",
                 imgClass: ""
             },
+        ],
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.category.img1,
+                title: "Peach",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
         ]
     },
     {
@@ -231,6 +343,62 @@ export const tabs = [
                 items: "50",
                 imgClass: ""
             }
+        ],
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
         ]
     },
     {
@@ -292,6 +460,62 @@ export const tabs = [
                 items: "50",
                 imgClass: ""
             }
+        ],
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Coffee & Tea",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Coffee & Tea",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Coffee & Tea",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Coffee & Tea",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Coffee & Tea",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Coffee & Tea",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
         ]
     },
     {
@@ -353,8 +577,244 @@ export const tabs = [
                 items: "50",
                 imgClass: ""
             }
+        ],
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Meat",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Meat",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Meat",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Meat",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Meat",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Meat",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
         ]
     },
+]
+
+export const dailySells = [
+    {
+        value: "Featured",
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+        ]
+    },
+    {
+        value: "Popular",
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.category.img1,
+                title: "Peach",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+        ]
+    },
+    {
+        value: "New",
+        products: [
+            {
+                src: assets.products.img1,
+                title: "Redish 500g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img2,
+                title: "Potatos 1kg",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img4,
+                title: "Broccoli 1kg",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img5,
+                title: "Green Beans 250g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+            {
+                src: assets.products.img3,
+                title: "Tomatos 200g",
+                category: "Fruits",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                imgClass: ""
+            },
+        ]
+    }
 ]
 
 export const promotion = [
@@ -380,6 +840,101 @@ export const promotion = [
     },
 ]
 
+export const topList = [
+    {
+        title: "Top Sells",
+        list: [
+            {
+                src: assets.category.img1,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img2,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img3,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            }
+        ]
+    },
+    {
+        title: "Top Rated",
+        list: [
+            {
+                src: assets.category.img1,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img2,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img3,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            }
+        ]
+    },
+    {
+        title: "Trending Items",
+        list: [
+            {
+                src: assets.category.img1,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img2,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img3,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            }
+        ]
+    },
+    {
+        title: "Recently Added",
+        list: [
+            {
+                src: assets.category.img1,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img2,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            },
+            {
+                src: assets.category.img3,
+                title: "Orange 1kg",
+                price: "2",
+                oldPrice: "3.99"
+            }
+        ]
+    },
+]
+
 export const services = [
     {
         src: assets.service.price,
@@ -398,6 +953,7 @@ export const services = [
         imgClass: "2xl:w-18 w-10"
     },
 ]
+
 export const links = [
     {
         title: "Account",
@@ -460,6 +1016,7 @@ export const links = [
         ]
     },
 ]
+
 export const address = [
     {
         src: assets.icon.location,

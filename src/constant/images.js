@@ -10,6 +10,7 @@ export const assets = {
         phone: require("../assets/phone.png"),
         mail: require("../assets/mail.png"),
         clock: require("../assets/clock.png"),
+        cart: require("../assets/cart.png"),
     },
     button: {
         appStore: require("../assets/app-store.png"),
@@ -32,5 +33,12 @@ export const assets = {
         img5: require("../assets/category/image5.png"),
         img6: require("../assets/category/image6.png"),
         img7: require("../assets/category/image7.png"),
+    },
+    products:{
+        img1: require("../assets/products/img1.png"),
+        img2: require("../assets/products/img2.png"),
+        img3: require("../assets/products/img3.png"),
+        img4: require("../assets/products/img4.png"),
+        img5: require("../assets/products/img5.png"),
     }
 }

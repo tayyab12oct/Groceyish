@@ -2,10 +2,10 @@ import React from 'react'
 import { twMerge } from 'tailwind-merge';
 
 function PrevArrowButton(props) {
-    const { className, onClick } = props;
+    const { className, classNames, onClick } = props;
     return (
         <div
-            className={twMerge(`xl:-ml-10 md:-ml-8 -ml-4 -mt-8 ${className} ${props.class}`)}
+            className={twMerge(`xl:-ml-10 md:-ml-8 -ml-4 -mt-8 ${className} ${classNames}`)}
             onClick={onClick}
         >
             <svg className='lg:h-12 h-8 lg:w-12 w-8' viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">

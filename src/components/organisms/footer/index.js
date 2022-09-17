@@ -45,7 +45,7 @@ function Footer() {
                         </a>
                     ))}
                 </div>
-                <div className="md:order-2 flex justify-center mt-4 md:mt-0">
+                <div className="md:order-2 hidden md:flex justify-center">
                     <img src={assets.payment} alt="Payments" className='2xl:h-8 h-6' />
                 </div>
                 <div className="mt-4 md:order-1 md:mt-0">

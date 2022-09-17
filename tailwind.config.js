@@ -31,7 +31,7 @@ module.exports = {
       black: { ...colors.black, 100: "rgba(0, 0, 0, 0.05)", 200: "#253D4E" },
       white: colors.white,
       slate: colors.slate,
-      gray: { ...colors.gray, 100: "#ADADAD", 200: "#D5D5D5", 300: "#F2F3F4", 400: "#F4F6FA", 800: "#838383" },
+      gray: { ...colors.gray, 50: "rgba(255, 255, 255, 0.92)", 70: "rgba(173, 173, 173, 0.17)", 100: "#ADADAD", 200: "#D5D5D5", 300: "#F2F3F4", 400: "#F4F6FA", 800: "#838383" },
       zinc: colors.zinc,
       neutral: colors.neutral,
       stone: colors.stone,

@@ -14,6 +14,7 @@ export const assets = {
         cartWhite: require("../assets/cart-white.png"),
         key: require("../assets/key.png"),
         email: require("../assets/mail-gray.png"),
+        grid: require("../assets/grid.png"),
     },
     button: {
         appStore: require("../assets/app-store.png"),

@@ -1,4 +1,36 @@
 import { assets } from "constant/images";
+import { BiHomeAlt } from 'react-icons/bi';
+import { HiOutlineFire,HiOutlineSpeakerphone } from 'react-icons/hi';
+import { AiOutlinePercentage } from 'react-icons/ai';
+
+export const routes = [
+    { name: 'Home', icon: BiHomeAlt, href: '#', current: true },
+    { name: 'Hot deals', icon: HiOutlineFire, href: '#', current: false },
+    { name: 'Promotions', icon: AiOutlinePercentage, href: '#', current: false },
+    { name: 'New products', icon: HiOutlineSpeakerphone, href: '#', current: false },
+]
+export const userNavigation = [
+    { name: 'Your Profile', href: '#' },
+    { name: 'Settings', href: '#' },
+    { name: 'Sign out', href: '#' },
+]
+export const dropdownList = [
+    {
+        value: "All Category"
+    },
+    {
+        value: "Vegetables"
+    },
+    {
+        value: "Fruits"
+    },
+    {
+        value: "Coffee & teas"
+    },
+    {
+        value: "Meat"
+    }
+]
 
 export const tabs = [
     {

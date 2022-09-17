@@ -19,7 +19,7 @@ export default class SimpleSlider extends Component {
                 <div className="relative">
                     <img src={assets.hero_bg} alt="" className="absolute inset-0 pointer-events-none h-full w-full" />
                     <div className="relative bg-primary-200 h-full grid md:grid-cols-2 items-center lg:pl-5 xl:pl-10 2xl:pl-5">
-                        <div className="2xl:p-26 xl:p-20 md:p-6 px-5 py-14">
+                        <div className="2xl:p-26 xl:p-20 md:p-6 px-4 py-14">
                             <h1 className="2xl:text-6xl xl:text-5xl text-3xl text-black-200 font-bold">Don’t miss our daily amazing deals.</h1>
                             <p className="text-gray-800 2xl:text-xl xl:text-lg md:text-md md:py-7 pt-5 pb-7">Save up to 60% off on your first order</p>
                             <div className="flex lg:pt-6">
@@ -38,7 +38,7 @@ export default class SimpleSlider extends Component {
                 <div className="relative">
                     <img src={assets.hero_bg} alt="" className="absolute inset-0 pointer-events-none h-full w-full" />
                     <div className="relative bg-primary-200 h-full grid md:grid-cols-2 items-center lg:pl-5 xl:pl-10 2xl:pl-5">
-                        <div className="2xl:p-26 xl:p-20 md:p-6 px-5 py-14">
+                        <div className="2xl:p-26 xl:p-20 md:p-6 px-4 py-14">
                             <h1 className="2xl:text-6xl xl:text-5xl text-3xl text-black-200 font-bold">Don’t miss our daily amazing deals.</h1>
                             <p className="text-gray-800 2xl:text-xl xl:text-lg md:text-md md:py-7 pt-5 pb-7">Save up to 60% off on your first order</p>
                             <div className="flex lg:pt-6">

@@ -1,3 +1,4 @@
+export { default as Header } from "./header"
 export { default as Slider } from "./slider"
 export { default as PromotionCard } from "./promotion-card"
 export { default as ProductTabs } from "./product-tabs"

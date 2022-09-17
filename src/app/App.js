@@ -1,6 +1,6 @@
 import { Product, Services } from "components/molecules";
 import { assets } from "constant/images"
-import { CategoryTabs, Footer, PromotionCard, Slider, ProductTabs, DailySellsTabs, Membership } from "components/organisms";
+import { CategoryTabs, Footer, PromotionCard, Slider, ProductTabs, DailySellsTabs } from "components/organisms";
 import { promotion, services, topList } from "@data"
 
 function App() {
@@ -24,7 +24,6 @@ function App() {
       </div>
       <div className="2xl:max-w-8xl xl:max-w-6xl mx-auto py-5 lg:px-22 md:px-6 sm:px-6 px-4 xl:px-0 w-full">
         <DailySellsTabs title="Daily Best Sells" />
-        <Membership />
       </div>
       <div className="2xl:max-w-8xl xl:max-w-6xl max-w-6xl mx-auto md:py-20 pb-20 md:px-6 px-5 xl:px-0 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-20 md:gap-10 gap-4 w-full">
         {topList.map((v, k) => {

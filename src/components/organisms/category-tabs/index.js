@@ -51,7 +51,7 @@ function CustomTabs(props) {
                 <div>
                     {tabs.map((v, k) => {
                         return (
-                            <Tab key={k}><span className='text-xs 2xl:text-base'>{v.value}</span></Tab>
+                            <Tab key={k}><span className='text-xs xl:text-sm 2xl:text-base'>{v.value}</span></Tab>
                         )
                     })}
                 </div>

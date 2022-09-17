@@ -696,6 +696,19 @@ export const dailySells = [
             {
                 offer: true,
             },
+            {
+                src: assets.products.img4,
+                badge: "Save 10%",
+                badgeClass: "-mt-1.5 -ml-1.5 bg-secondary-100",
+                imgMainClass: "w-full",
+                title: "Broccoli 1kg",
+                category: "Vegetables",
+                name: "Mr.food",
+                price: "2",
+                oldPrice: "3.99",
+                progress: "45%",
+                sold: "7/20"
+            },
         ]
     },
     {
@@ -751,24 +764,14 @@ export const dailySells = [
                 sold: "7/20"
             },
             {
-                src: assets.products.img5,
-                badge: "Save 10%",
-                badgeClass: "-mt-1.5 -ml-1.5 bg-secondary-100",
-                imgMainClass: "w-full",
-                title: "Green Beans 250g",
-                category: "Vegetables",
-                name: "Mr.food",
-                price: "2",
-                oldPrice: "3.99",
-                progress: "45%",
-                sold: "7/20"
+                offer: true,
             },
             {
-                src: assets.products.img3,
+                src: assets.products.img4,
                 badge: "Save 10%",
                 badgeClass: "-mt-1.5 -ml-1.5 bg-secondary-100",
                 imgMainClass: "w-full",
-                title: "Tomatos 200g",
+                title: "Broccoli 1kg",
                 category: "Fruits",
                 name: "Mr.food",
                 price: "2",
@@ -833,25 +836,13 @@ export const dailySells = [
                 progress: "45%",
                 sold: "7/20"
             },
+            { offer: true },
             {
-                src: assets.products.img5,
+                src: assets.products.img4,
                 badge: "Save 10%",
                 badgeClass: "-mt-1.5 -ml-1.5 bg-secondary-100",
                 imgMainClass: "w-full",
-                title: "Green Beans 250g",
-                category: "Fruits",
-                name: "Mr.food",
-                price: "2",
-                oldPrice: "3.99",
-                progress: "45%",
-                sold: "7/20"
-            },
-            {
-                src: assets.products.img3,
-                badge: "Save 10%",
-                badgeClass: "-mt-1.5 -ml-1.5 bg-secondary-100",
-                imgMainClass: "w-full",
-                title: "Tomatos 200g",
+                title: "Broccoli 1kg",
                 category: "Fruits",
                 name: "Mr.food",
                 price: "2",

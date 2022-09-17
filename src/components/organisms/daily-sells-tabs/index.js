@@ -65,22 +65,17 @@ function CustomTabs(props) {
                     <TabPanel key={j} className="">
                         <Slider {...settings} className="-mx-2">
                             {i?.products?.map((val, k) => {
-                                return <>
-                                    {val.offer ? <div className='px-2'><Membership /> </div>:
-                                        <Product {...val} key={k} className="hover:shadow-lg mb-5 p-1.5 rounded overflow-hidden" btnValue="Add to cart" ratingClass="pt-2.5"
-                                            btnClass="w-full bg-primary-100 text-white 2xl:py-3 py-2.5 2xl:text-md text-sm"
-                                            icon={assets.icon.cartWhite}
-                                        >
-                                            <div className="w-full pb-2 pt-4">
-                                                <div class="w-full bg-gray-400 rounded-full h-1.5">
-                                                    <div class="bg-primary-100 h-1.5 rounded-full" style={{ width: val.progress }}></div>
-                                                </div>
-                                                <p className="text-sm text-black-200 py-1">Sold: {val.sold}</p>
-                                            </div>
-                                        </Product>
-                                    }
-
-                                </>
+                                return <Product {...val} key={k} className="hover:shadow-lg mb-5 p-1.5 rounded overflow-hidden" btnValue="Add to cart" ratingClass="pt-2.5"
+                                    btnClass="w-full bg-primary-100 text-white 2xl:py-3 py-2.5 2xl:text-md text-sm"
+                                    icon={assets.icon.cartWhite}
+                                >
+                                    <div className="w-full pb-2 pt-4">
+                                        <div class="w-full bg-gray-400 rounded-full h-1.5">
+                                            <div class="bg-primary-100 h-1.5 rounded-full" style={{ width: val.progress }}></div>
+                                        </div>
+                                        <p className="text-sm text-black-200 py-1">Sold: {val.sold}</p>
+                                    </div>
+                                </Product>
                             })}
                         </Slider>
                     </TabPanel>

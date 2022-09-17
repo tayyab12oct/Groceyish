@@ -63,7 +63,7 @@ function CustomTabs(props) {
                     <TabPanel key={j} className="px-8 md:px-0">
                         <Slider {...settings} className="md:-mx-2">
                             {i?.products?.map((val, k) => {
-                                return <Product {...val} key={k} />
+                                return <Product {...val} key={k} btnValue="Add" />
                             })}
                         </Slider>
                     </TabPanel>

@@ -35,7 +35,7 @@ function Header() {
                                                 <option key={k}>{v.value}</option>
                                             ))}
                                         </select>
-                                        <Input placeholder="Search for items..." id="search" type="text" inputClass="bg-transparent placeholder-gray-100 2xl:text-sm xl:text-xs text-xs border-l border-gray-100 py-0 rounded-none border-0" mainClass="w-full flex items-center" />
+                                        <Input placeholder="Search for items..." id="search" type="text" inputClass="bg-transparent placeholder-gray-100 2xl:text-sm xl:text-xs text-xs border-0 !border-l-1 border-gray-100 py-0 rounded-none" mainClass="w-full flex items-center" />
                                         <Button icon={<FiSearch className='2xl:text-xl xl:text-base' />} className="2xl:py-2.5 xl:py-2 px-3 2xl:px-3.5" />
                                     </div>
                                 </div>

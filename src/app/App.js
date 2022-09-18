@@ -5,7 +5,7 @@ import { promotion, services, topList } from "@data"
 
 function App() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Header />
       <HeroSection />
       <div className="2xl:max-w-8xl xl:max-w-6xl lg:max-w-6xl mx-auto md:py-20 py-10 md:px-22 sm:px-8 px-4 xl:px-5 2xl:px-0 w-full">

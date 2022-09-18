@@ -39,17 +39,17 @@ function Header() {
                                         <Button icon={<FiSearch className='2xl:text-xl xl:text-base' />} className="2xl:py-2.5 xl:py-2 px-3 2xl:px-3.5" />
                                     </div>
                                 </div>
-                                <div className="md:relative md:z-10 md:flex md:items-center 2xl:space-x-8 xl:space-x-2 lg:space-x-0 space-x-5">
+                                <div className="md:relative md:z-10 md:flex md:items-center 2xl:space-x-8 xl:space-x-2 lg:space-x-0 md:space-x-5 space-x-3">
                                     <a
                                         href="/"
-                                        className="inline-flex items-center text-sm xl:text-xs transition-all text-black-200 hover:text-primary-100"
+                                        className="inline-flex items-center md:text-sm text-xs xl:text-xs transition-all text-black-200 hover:text-primary-100"
                                     >
-                                        <FiHeart className='2xl:text-xl text-lg mr-1.5' />
+                                        <FiHeart className='2xl:text-xl md:text-lg text-md md:mr-1.5 mr-1' />
                                         <span>Wishlist</span>
                                     </a>
                                     <a
                                         href="/"
-                                        className="inline-flex xl:w-40 lg:w-34 items-center justify-center group space-x-0.5 text-sm xl:text-xs transition-all text-black-200 hover:text-primary-100"
+                                        className="inline-flex xl:w-40 lg:w-34 items-center justify-center group space-x-0.5 md:text-sm text-xs xl:text-xs transition-all text-black-200 hover:text-primary-100"
                                     >
                                         <span className="relative inline-block">
                                             <FiShoppingCart className='2xl:text-xl text-base mr-1.5' />
@@ -59,7 +59,7 @@ function Header() {
                                             <p>My cart</p>
                                             <p className='text-primary-100'>$21</p>
                                         </div>
-                                        <FiChevronDown className="text-lg font-semibold" />
+                                        <FiChevronDown className="md:text-lg text-base font-semibold" />
                                     </a>
                                     {/* Profile dropdown */}
                                     <Dropdown buttonClass="hidden" menuClass="right-0 w-full" mainClass="hidden lg:block" dropdownMap={userNavigation}>

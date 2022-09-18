@@ -5,7 +5,8 @@ import { dropdownList, routes, user, userNavigation } from '@data'
 import { Dropdown } from 'components/molecules'
 import { CgMenuRightAlt } from 'react-icons/cg'
 import { GrFormClose } from 'react-icons/gr';
-import { FiChevronDown } from 'react-icons/fi';
+import { FiSearch, FiChevronDown, FiHeart, FiShoppingCart } from 'react-icons/fi';
+import { Button, Input } from 'components/atoms'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -17,34 +18,53 @@ function Header() {
             {({ open }) => (
                 <>
                     <div className="divide-y lg:divide-gray-70 2xl:max-w-8xl xl:max-w-6xl max-w-6xl mx-auto md:px-6 px-4 xl:px-0 w-full">
-                        <div className="relative flex h-16 justify-between">
+                        <div className="relative flex items-center py-4.5 justify-between space-x-8 md:space-x-0">
                             <div className="flex flex-shrink-0 items-center">
                                 <img src={assets.logo} alt="Logo" className='2xl:h-10 h-9' />
                             </div>
-                            <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
-                                <div className="w-full sm:max-w-xs">
-                                    <label htmlFor="search" className="sr-only">
-                                        Search
-                                    </label>
-                                    <div className="relative">
-                                        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                        </div>
-                                        <input
-                                            id="search"
-                                            name="search"
-                                            className="block w-full rounded-md border border-gray-300 bg-white py-2 pl-10 pr-3 text-sm placeholder-gray-500 focus:border-indigo-500 focus:text-gray-900 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
-                                            placeholder="Search"
-                                            type="search"
-                                        />
-                                    </div>
+                            <div className="2xl:max-w-2xl xl:max-w-lg lg:max-w-md md:max-w-xs max-w-sm w-full">
+                                <div className="relative bg-gray-500 flex items-center rounded-sm overflow-hidden">
+                                    <select
+                                        id="location"
+                                        name="location"
+                                        className="py-2 pl-3 md:pr-5 2xl:text-sm xl:text-xs text-xs focus:outline-none bg-transparent cursor-pointer mr-3 text-black-200 font-medium"
+                                        defaultValue="All Category"
+                                    >
+                                        {dropdownList.map((v, k) => (
+                                            <option key={k}>{v.value}</option>
+                                        ))}
+                                    </select>
+                                    <Input placeholder="Search for items..." id="search" type="text" inputClass="bg-transparent placeholder-gray-100 2xl:text-sm xl:text-xs text-xs border-l border-gray-100 py-0" mainClass="w-full flex items-center" />
+                                    <Button icon={<FiSearch className='2xl:text-xl xl:text-base' />} className="2xl:py-2.5 xl:py-2 px-3 2xl:px-3.5" />
                                 </div>
                             </div>
-                            <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
+                            <div className="hidden md:relative md:z-10 md:flex md:items-center 2xl:space-x-8 xl:space-x-2 lg:space-x-0 space-x-5">
+                                <a
+                                    href="/"
+                                    className="inline-flex items-center text-sm xl:text-xs transition-all text-black-200 hover:text-primary-100"
+                                >
+                                    <FiHeart className='2xl:text-xl text-lg mr-1.5' />
+                                    <span>Wishlist</span>
+                                </a>
+                                <a
+                                    href="/"
+                                    className="inline-flex xl:w-40 lg:w-34 items-center justify-center group space-x-0.5 text-sm xl:text-xs transition-all text-black-200 hover:text-primary-100"
+                                >
+                                    <span className="relative inline-block">
+                                        <FiShoppingCart className='2xl:text-xl text-base mr-1.5' />
+                                        <span className="absolute top-0 right-0 h-2.5 w-2.5 ring-1 ring-white text-tinny flex items-center justify-center text-white rounded-full bg-primary-100" >1</span>
+                                    </span>
+                                    <div>
+                                        <p>My cart</p>
+                                        <p className='text-primary-100'>$21</p>
+                                    </div>
+                                    <FiChevronDown className="text-lg font-semibold" />
+                                </a>
                                 {/* Profile dropdown */}
-                                <Dropdown buttonClass="hidden" menuClass="right-0 w-full" dropdownMap={userNavigation}>
+                                <Dropdown buttonClass="hidden" menuClass="right-0 w-full" mainClass="hidden lg:block" dropdownMap={userNavigation}>
                                     <Menu.Button className="flex items-center space-x-1.5 focus:outline-none">
                                         <img className="h-8 w-8 2xl:h-10 2xl:w-10 rounded-full" src={user.imageUrl} alt="" />
-                                        <span className="text-sm 2xl:text-md text-black-200 font-semibold">{user.name}</span>
+                                        <span className="text-sm xl:text-2xs 2xl:text-md text-black-200 font-semibold">{user.name}</span>
                                         <FiChevronDown className="text-lg font-semibold text-black-200" />
                                     </Menu.Button>
                                 </Dropdown>
@@ -87,7 +107,7 @@ function Header() {
                         </div>
                         <nav className="flex items-center justify-between py-2">
                             <Dropdown menuClass="left-0 w-full" dropdownMap={dropdownList} />
-                            <div className='hidden lg:flex items-center space-x-14'>
+                            <div className='hidden lg:flex items-center xl:space-x-14 space-x-7'>
                                 {routes.map((item) => (
                                     <a
                                         key={item.name}
@@ -150,12 +170,12 @@ function Header() {
                             <div className="mt-3 space-y-1 px-2">
                                 {userNavigation.map((item) => (
                                     <Disclosure.Button
-                                        key={item.name}
+                                        key={item.value}
                                         as="a"
                                         href={item.href}
                                         className="block rounded-md py-1 px-3 text-sm font-medium text-black-200 hover:text-primary-100"
                                     >
-                                        {item.name}
+                                        {item.value}
                                     </Disclosure.Button>
                                 ))}
                             </div>

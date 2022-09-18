@@ -1,7 +1,6 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { assets } from 'constant/images'
-import { dropdownList } from '@data'
 import { twMerge } from 'tailwind-merge'
 
 function classNames(...classes) {
@@ -10,9 +9,9 @@ function classNames(...classes) {
 
 function Dropdown(props) {
     return (
-        <Menu as="div" className="relative inline-block text-left">
+        <Menu as="div" className={twMerge(`relative inline-block text-left ${props.mainClass}`)}>
             <div>
-            <Menu.Button className={twMerge(`inline-flex w-full items-center space-x-2 justify-center rounded-sm font-medium bg-primary-100 px-4 py-2 2xl:py-3.5 text-sm 2xl:text-md text-white shadow-sm focus:outline-none ${props.buttonClass}`)}>
+                <Menu.Button className={twMerge(`inline-flex w-full items-center space-x-2 justify-center rounded-sm font-medium bg-primary-100 px-4 py-2 2xl:py-3.5 text-sm 2xl:text-md text-white shadow-sm focus:outline-none ${props.buttonClass}`)}>
                     <img src={assets.icon.grid} alt="Grid" className='w-6' />
                     <span>Brows All Categories</span>
                 </Menu.Button>
@@ -33,7 +32,7 @@ function Dropdown(props) {
                         {props?.dropdownMap?.map((v, k) => (<Menu.Item key={k}>
                             {({ active }) => (
                                 <a
-                                    href="#"
+                                    href="/"
                                     className={classNames(
                                         active ? 'bg-gray-70 text-primary-100' : 'text-black-200',
                                         'block px-4 py-2.5 text-sm transition-all'

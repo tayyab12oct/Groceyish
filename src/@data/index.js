@@ -7,7 +7,7 @@ export const user = {
     name: 'Tayyab Mughal',
     email: 'tayyab.8563@gmail.com',
     imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        'https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/28cf09e7fd70847e75f4a95024ec1949-1624276542543/154b2fb5-1200-4fd9-a236-3cd467dc5a9a.jpeg',
 }
 
 export const routes = [

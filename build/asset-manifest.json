@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1096c9c9.css",
+    "main.js": "/static/js/main.d3eb0746.js",
+    "static/js/496.3f726fcc.chunk.js": "/static/js/496.3f726fcc.chunk.js",
+    "static/media/mobile.png": "/static/media/mobile.335cfa8e056b92bda2a4.png",
+    "static/media/hero-img.png": "/static/media/hero-img.a6f2684db5f0f09ae9cf.png",
+    "static/media/Offer2.png": "/static/media/Offer2.91efe1bca3a26e5f560e.png",
+    "static/media/hero-bg.png": "/static/media/hero-bg.2e101e54972f796d6046.png",
+    "static/media/Offer1.png": "/static/media/Offer1.4b398f3257f2236b3789.png",
+    "static/media/img3.png": "/static/media/img3.a9ce5bc39c9aff1d9185.png",
+    "static/media/img5.png": "/static/media/img5.36cf6567c46b317b961d.png",
+    "static/media/img2.png": "/static/media/img2.2fef4856090a520e2cf3.png",
+    "static/media/img1.png": "/static/media/img1.4f7a96e2cbec5eeb9b40.png",
+    "static/media/img4.png": "/static/media/img4.caf5fbaf67bc0dbfb4ce.png",
+    "static/media/image3.png": "/static/media/image3.3e94bf60d4f854cf472f.png",
+    "static/media/image5.png": "/static/media/image5.f169ab81e3c2270ab10c.png",
+    "static/media/image2.png": "/static/media/image2.30fa3cbbb7499ba7abe9.png",
+    "static/media/image6.png": "/static/media/image6.05f447d573a016f66de0.png",
+    "static/media/image1.png": "/static/media/image1.162e07bf43ba53754d91.png",
+    "static/media/image4.png": "/static/media/image4.db4e58300756a0353457.png",
+    "static/media/image7.png": "/static/media/image7.e39dcc74a79c37fecff3.png",
+    "static/media/play-store.png": "/static/media/play-store.e21a9ab570307e1c6bce.png",
+    "static/media/logo.png": "/static/media/logo.7a3a080b3b8a3fe43752.png",
+    "static/media/app-store.png": "/static/media/app-store.488e5df840c09cb7ffbe.png",
+    "static/media/Payment.png": "/static/media/Payment.ed235d7e1229bdfc33fe.png",
+    "static/media/price.png": "/static/media/price.1054a5c6cd58db505eda.png",
+    "static/media/li_send.svg": "/static/media/li_send.5401f0c772df406072c241274984eafb.svg",
+    "index.html": "/index.html",
+    "main.1096c9c9.css.map": "/static/css/main.1096c9c9.css.map",
+    "main.d3eb0746.js.map": "/static/js/main.d3eb0746.js.map",
+    "496.3f726fcc.chunk.js.map": "/static/js/496.3f726fcc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1096c9c9.css",
+    "static/js/main.d3eb0746.js"
+  ]
+}

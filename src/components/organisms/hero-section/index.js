@@ -4,7 +4,7 @@ import { assets } from "constant/images";
 import { Button, Input } from "components/atoms"
 import Send from "assets/li_send.svg"
 
-export default class SimpleSlider extends Component {
+export default class HeroSection extends Component {
     render() {
         const settings = {
             dots: true,

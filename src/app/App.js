@@ -1,13 +1,13 @@
 import { Services } from "components/molecules";
 import { assets } from "constant/images"
-import { CategoryTabs, Footer, PromotionCard, Slider, ProductTabs, Product, DailySellsTabs, Header } from "components/organisms";
+import { CategoryTabs, Footer, PromotionCard, HeroSection, ProductTabs, Product, DailySellsTabs, Header } from "components/organisms";
 import { promotion, services, topList } from "@data"
 
 function App() {
   return (
     <div className="">
       <Header />
-      <Slider />
+      <HeroSection />
       <div className="2xl:max-w-8xl xl:max-w-6xl lg:max-w-6xl mx-auto md:py-20 py-10 md:px-22 sm:px-8 px-4 xl:px-5 2xl:px-0 w-full">
         <CategoryTabs title="Explore Categories"
           labelClass="text-black-200 lg:text-2.5xl text-2xl font-semibold tracking-wide"

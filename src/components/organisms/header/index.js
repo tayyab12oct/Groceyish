@@ -1,17 +1,11 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { assets } from 'constant/images'
-import { routes, userNavigation } from '@data'
+import { dropdownList, routes, user, userNavigation } from '@data'
 import { Dropdown } from 'components/molecules'
 import { CgMenuRightAlt } from 'react-icons/cg'
 import { GrFormClose } from 'react-icons/gr';
-
-const user = {
-    name: 'Tom Cook',
-    email: 'tom@example.com',
-    imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-}
+import { FiChevronDown } from 'react-icons/fi';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -47,8 +41,14 @@ function Header() {
                             </div>
                             <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
                                 {/* Profile dropdown */}
-                                <Dropdown />
-                                <Menu as="div" className="relative ml-4 flex-shrink-0">
+                                <Dropdown buttonClass="hidden" menuClass="right-0 w-full" dropdownMap={userNavigation}>
+                                    <Menu.Button className="flex items-center space-x-1.5 focus:outline-none">
+                                        <img className="h-8 w-8 2xl:h-10 2xl:w-10 rounded-full" src={user.imageUrl} alt="" />
+                                        <span className="text-sm 2xl:text-md text-black-200 font-semibold">{user.name}</span>
+                                        <FiChevronDown className="text-lg font-semibold text-black-200" />
+                                    </Menu.Button>
+                                </Dropdown>
+                                <Menu as="div" className="relative hidden ml-4 flex-shrink-0">
                                     <div>
                                         <Menu.Button className="flex rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                                             <span className="sr-only">Open user menu</span>
@@ -86,7 +86,7 @@ function Header() {
                             </div>
                         </div>
                         <nav className="flex items-center justify-between py-2">
-                            <Dropdown />
+                            <Dropdown menuClass="left-0 w-full" dropdownMap={dropdownList} />
                             <div className='hidden lg:flex items-center space-x-14'>
                                 {routes.map((item) => (
                                     <a

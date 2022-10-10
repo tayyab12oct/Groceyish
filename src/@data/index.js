@@ -3,13 +3,6 @@ import { BiHomeAlt } from 'react-icons/bi';
 import { HiOutlineFire, HiOutlineSpeakerphone } from 'react-icons/hi';
 import { AiOutlinePercentage } from 'react-icons/ai';
 
-export const user = {
-    name: 'Tayyab Mughal',
-    email: 'tayyab.8563@gmail.com',
-    imageUrl:
-        'https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/28cf09e7fd70847e75f4a95024ec1949-1624276542543/154b2fb5-1200-4fd9-a236-3cd467dc5a9a.jpeg',
-}
-
 export const routes = [
     { name: 'Home', icon: BiHomeAlt, href: '#', current: true },
     { name: 'Hot deals', icon: HiOutlineFire, href: '#', current: false },
@@ -19,7 +12,6 @@ export const routes = [
 export const userNavigation = [
     { value: 'Your Profile', href: '#' },
     { value: 'Settings', href: '#' },
-    { value: 'Sign out', href: '#' },
 ]
 export const dropdownList = [
     {

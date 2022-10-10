@@ -1,18 +1,23 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { assets } from 'constant/images'
-import { dropdownList, routes, user, userNavigation } from '@data'
+import { dropdownList, routes, userNavigation } from '@data'
 import { Dropdown } from 'components/molecules'
 import { CgMenuRightAlt } from 'react-icons/cg'
 import { GrFormClose } from 'react-icons/gr';
 import { FiSearch, FiChevronDown, FiHeart, FiShoppingCart } from 'react-icons/fi';
 import { Button, Input } from 'components/atoms'
+import { useAuth0 } from '@auth0/auth0-react'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 function Header() {
+    const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+    useEffect(() => {
+        console.log("Data", user);
+    })
     return (
         <Disclosure as="header" className="bg-gray-50 backdrop-blur-md w-full border-b border-gray-70 sticky inset-x-0 top-0 z-50">
             {({ open }) => (
@@ -61,49 +66,54 @@ function Header() {
                                         </div>
                                         <FiChevronDown className="md:text-lg text-base font-semibold" />
                                     </a>
-                                    {/* Profile dropdown */}
-                                    <Dropdown buttonClass="hidden" menuClass="right-0 w-full" mainClass="hidden lg:block" dropdownMap={userNavigation}>
-                                        <Menu.Button className="flex items-center space-x-1.5 focus:outline-none">
-                                            <img className="h-8 w-8 2xl:h-10 2xl:w-10 rounded-full" src={user.imageUrl} alt="" />
-                                            <span className="text-sm xl:text-2xs 2xl:text-md text-black-200 font-semibold">{user.name}</span>
-                                            <FiChevronDown className="text-lg font-semibold text-black-200" />
-                                        </Menu.Button>
-                                    </Dropdown>
-                                    <Menu as="div" className="relative hidden ml-4 flex-shrink-0">
-                                        <div>
-                                            <Menu.Button className="flex rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                                                <span className="sr-only">Open user menu</span>
-                                                <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                                    {isAuthenticated ? <>
+                                        <Dropdown buttonClass="hidden" menuClass="right-0 w-full" mainClass="hidden lg:block" dropdownMap={userNavigation}>
+                                            <Menu.Button className="flex items-center space-x-1.5 focus:outline-none">
+                                                <img className="h-8 w-8 2xl:h-10 2xl:w-10 rounded-full" src={user.picture} alt="" />
+                                                <span className="text-sm xl:text-2xs 2xl:text-md text-black-200 font-semibold">{user.nickname}</span>
+                                                <FiChevronDown className="text-lg font-semibold text-black-200" />
                                             </Menu.Button>
-                                        </div>
-                                        <Transition
-                                            as={Fragment}
-                                            enter="transition ease-out duration-100"
-                                            enterFrom="transform opacity-0 scale-95"
-                                            enterTo="transform opacity-100 scale-100"
-                                            leave="transition ease-in duration-75"
-                                            leaveFrom="transform opacity-100 scale-100"
-                                            leaveTo="transform opacity-0 scale-95"
-                                        >
-                                            <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                                {userNavigation.map((item) => (
-                                                    <Menu.Item key={item.name}>
-                                                        {({ active }) => (
-                                                            <a
-                                                                href={item.href}
-                                                                className={classNames(
-                                                                    active ? 'bg-gray-100' : '',
-                                                                    'block py-2 px-4 text-sm text-gray-700'
-                                                                )}
-                                                            >
-                                                                {item.name}
-                                                            </a>
-                                                        )}
-                                                    </Menu.Item>
-                                                ))}
-                                            </Menu.Items>
-                                        </Transition>
-                                    </Menu>
+                                        </Dropdown>
+                                        <Menu as="div" className="relative hidden ml-4 flex-shrink-0">
+                                            <div>
+                                                <Menu.Button className="flex rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                                                    <span className="sr-only">Open user menu</span>
+                                                    <img className="h-8 w-8 rounded-full" src={user.picture} alt="" />
+                                                </Menu.Button>
+                                            </div>
+                                            <Transition
+                                                as={Fragment}
+                                                enter="transition ease-out duration-100"
+                                                enterFrom="transform opacity-0 scale-95"
+                                                enterTo="transform opacity-100 scale-100"
+                                                leave="transition ease-in duration-75"
+                                                leaveFrom="transform opacity-100 scale-100"
+                                                leaveTo="transform opacity-0 scale-95"
+                                            >
+                                                <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                                    {userNavigation.map((item) => (
+                                                        <Menu.Item key={item.name}>
+                                                            {({ active }) => (
+                                                                <a onClick={item.onClick}
+                                                                    href={item.href}
+                                                                    className={classNames(
+                                                                        active ? 'bg-gray-100' : '',
+                                                                        'block py-2 px-4 text-sm text-gray-700'
+                                                                    )}
+                                                                >
+                                                                    {item.name}
+                                                                </a>
+
+                                                            )}
+                                                        </Menu.Item>
+                                                    ))}
+                                                </Menu.Items>
+                                            </Transition>
+                                        </Menu>
+                                        <Button value="Sign out" className="2xl:py-2.5 xl:py-2 px-3 2xl:px-5 text-sm rounded-sm" onClick={() => logout({ returnTo: window.location.origin })} />
+                                    </> :
+                                        <Button value="Login" className="2xl:py-2.5 xl:py-2 px-3 text-sm rounded-sm" onClick={(e) => loginWithRedirect(e.prevenDefault)} />
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -178,11 +188,11 @@ function Header() {
                         <div className="border-t border-gray-70 pt-4 pb-3">
                             <div className="flex items-center">
                                 <div className="flex-shrink-0">
-                                    <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
+                                    {/* <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" /> */}
                                 </div>
                                 <div className="ml-3">
-                                    <div className="text-sm font-medium text-black-200">{user.name}</div>
-                                    <div className="text-xs font-medium text-black-200">{user.email}</div>
+                                    {/* <div className="text-sm font-medium text-black-200">{user.name}</div> */}
+                                    {/* <div className="text-xs font-medium text-black-200">{user.email}</div> */}
                                 </div>
                             </div>
                             <div className="mt-3 space-y-1">

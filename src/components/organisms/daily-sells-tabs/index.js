@@ -69,8 +69,8 @@ function CustomTabs(props) {
                                     icon={assets.icon.cartWhite}
                                 >
                                     <div className="w-full pb-2 pt-4">
-                                        <div class="w-full bg-gray-400 rounded-full h-1.5">
-                                            <div class="bg-primary-100 h-1.5 rounded-full" style={{ width: val.progress }}></div>
+                                        <div className="w-full bg-gray-400 rounded-full h-1.5">
+                                            <div className="bg-primary-100 h-1.5 rounded-full" style={{ width: val.progress }}></div>
                                         </div>
                                         <p className="text-sm text-black-200 py-1">Sold: {val.sold}</p>
                                     </div>
